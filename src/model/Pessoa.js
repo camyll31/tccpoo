@@ -1,7 +1,7 @@
 let {Sequelize, DataTypes}  = require("sequelize");
 let tccpoo = require("../tccpoo");
 
-const Pessoa = db.define("Pessoa",
+const Pessoa = tccpoo.define("Pessoa",
     {
         id: {
             type: DataTypes.INTEGER,
