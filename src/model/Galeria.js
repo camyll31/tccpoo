@@ -9,7 +9,7 @@ const Galeria = tccpoo.define("Galeria",
             allowNull: false,
             primaryKey: true
         },
-        foto: DataTypes.TIMESTAMP,
-        video: DataTypes.TIMESTAMP
+        foto: DataTypes.STRING,
+        video: DataTypes.STRING
     }
 )
