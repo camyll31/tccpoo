@@ -1,5 +1,5 @@
 let tccpoo = require("./tccpoo");
-let Galeria = require("./model/Galeria");
+let Policia = require("./model/Policia");
 
 async function sicronizar() {
     await tccpoo.sync();
