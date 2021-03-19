@@ -10,6 +10,18 @@ const Galeria = tccpoo.define("Galeria",
             primaryKey: true
         },
         foto: DataTypes.STRING,
-        video: DataTypes.STRING
+        video: DataTypes.STRING,
+        PessoaEndereco2: {
+            type: DataTypes.STRING,
+            references: {
+                model: Pessoa,
+                key:'endereco'
+            }
+        }
     }
-)
+);
+Pessoa.belongsto(Galeria);
+Galeria.hasMany(Pessoa, {as: 'pessoas'})
+Galeria.getPessoas();
+
+module.exports = Pessoa;

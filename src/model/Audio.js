@@ -8,7 +8,7 @@ const Audio = tccpoo.define("Audio",
             autoIncrement: true,
             allowNull: false,
             primaryKey: true
-        }
+        },
         PessoaEndereco: {
             type: DataTypes.STRING,
             references: {
