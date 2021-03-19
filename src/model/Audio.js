@@ -13,7 +13,13 @@ const Audio = tccpoo.define("Audio",
             type: DataTypes.STRING,
             references: {
                 model: Pessoa,
-                key: 'endereco'
+                key:'endereco'
             }
+        }
     }
-)
+);
+Pessoa.belongsto(Audio);
+Audio.hasMany(Pessoa, {as: 'pessoas'})
+Audio.getPessoas();
+
+module.exports = Pessoa;
