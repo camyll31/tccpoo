@@ -11,6 +11,7 @@ const Audio = tccpoo.define("Audio",
         },
         PessoaEndereco: {
             type: DataTypes.STRING,
+            allowNull: false,
             references: {
                 model: Pessoa,
                 key:'endereco'

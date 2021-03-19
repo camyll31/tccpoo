@@ -16,6 +16,7 @@ const Denuncia = tccpoo.define("Denuncia",
         pedofilia: DataTypes.INTEGER,
         PessoaEndereco2: {
             type: DataTypes.STRING,
+            allowNull: false,
             references: {
                 model: Pessoa,
                 key:'endereco'
