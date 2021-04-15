@@ -11,7 +11,7 @@ const Galeria = tccpoo.define("Galeria",
         },
         foto: DataTypes.STRING,
         video: DataTypes.STRING,
-        PessoaEndereco2: {
+        PessoaEndereco3: {
             type: DataTypes.STRING,
             allowNull: false,
             references: {
