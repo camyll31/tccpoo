@@ -101,7 +101,7 @@ catch (e){
    }
 }
 
-var Denuncia = {
+var denuncia = {
 
     create: async function (objeto){
 try{
@@ -143,6 +143,54 @@ try{
         const objeto = await Denuncia.findByPk(id);
         let denuncia = await objeto.destroy();
         console.log(denuncia);
+}
+catch (e){
+ throw new error (name = "ERRO")
+ console.log(e.name)
+      }
+   }
+}
+
+var galeria = {
+
+    create: async function (objeto){
+try{
+    let galeria = await Galeria.create(objeto);
+    console.log(audio);
+    }
+catch(e){
+    throw new error (name = "ERRO")
+    console.log(e.name)
+  }
+},
+        let: async function (){
+ try{
+    let galeria = await Galeria.findAll();
+
+        console.log(galeria);
+        }
+        catch (e){
+    throw new error (name= "ERRO");
+console.log(e.name);
+}
+},
+
+    atualizar: async function (foto, video, id){
+try{
+const nome = await Galeria.findByPk(id);
+        await novo.update({foto:`${foto}`});
+        await novo.update({video:`${video}`});
+    }
+catch (e){
+     throw new error (name = "ERRO")
+     console.log(e.name)
+}
+},
+    deletar: async function (id){
+try{
+        const objeto = await Galeria.findByPk(id);
+        let galeria = await objeto.destroy();
+        console.log(galeria);
 }
 catch (e){
  throw new error (name = "ERRO")
