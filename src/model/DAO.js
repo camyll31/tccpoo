@@ -1,4 +1,9 @@
-const tccpoo = require("../tccpoo");
+const Amigos = require("../model/Amigos");
+const Audio = require("../model/Audio");
+const Denuncia = require("../model/Denuncia");
+const Galeria = require("../model/Galeria");
+const Pessoa = require("../model/Pessoa");
+const Policia = require("../model/Policia");
 
 var Amigos = {
     create: async function (objeto){
@@ -133,4 +138,9 @@ var Policia = {
         console.log(e);
 }
 }
-module.exports = tccpoo;
+module.exports = Amigos;
+module.exports = Audio;
+module.exports = Denuncia;
+module.exports = Galeria;
+module.exports = Pessoa;
+module.exports = Policia;
