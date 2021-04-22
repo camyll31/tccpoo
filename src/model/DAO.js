@@ -175,7 +175,7 @@ console.log(e.name);
 }
 },
 
-    atualizar: async function (Nomeatualizar, Sobrenomeatualixar, telefoneatualizar, enderecoatualizar id){
+    atualizar: async function (Nomeatualizar, Sobrenomeatualixar, telefoneatualizar, enderecoatualizar, id){
 try{
 const nome = await Pessoa.findByPk(id);
             await novo.update({nome:`${Nomeatualizar}`});
